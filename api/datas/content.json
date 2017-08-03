@@ -1,0 +1,25 @@
+{
+  "subtitle" : "<strong>We get you: Something didn’t work out - and you’re angry.</strong> <br> Please use our service: We will take your feedback and tell the person responsible so they can make things right!",
+  "whyTitle" : "What went wrong with using the service?",
+  "reasons" : [
+      {
+        "title": "It took too long!",
+        "categorie": "Too long",
+        "icon": "time.svg"
+      },
+      {
+        "title": "It was too complicated",
+        "categorie": "Too complicated",
+        "icon": "complicated.svg"
+      },
+      {
+        "title": "I expected to find something I couldn’t",
+        "categorie": "Not found",
+        "icon": "magnifier.svg"
+      }
+    ],
+ "howTitle" : "How would you improve the service if you were the boss?",
+ "howFiledContent" : "1-2 sentences, please include links that might be helpful",
+ "contactTitle" : "We will tell them to make things right!",
+ "contactSubtitle" : "Please give us your contact information so we can tell you what they said. They won’t see who you are - we protect your personal information."
+}
