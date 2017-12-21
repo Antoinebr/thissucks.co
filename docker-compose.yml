@@ -1,6 +1,17 @@
 php_apache:
   image: webdevops/php-apache:7.1
+  links:
+    - db:mysql
   ports:
     - 9999:80
   volumes:
     - .:/app/
+
+db:
+  image: mariadb
+  ports:
+    - 3309:3306
+  volumes:
+    - "./docker/mysql/data/:/var/lib/mysql"
+  environment: 
+    MYSQL_ROOT_PASSWORD: examplepass

@@ -8,6 +8,10 @@ require('./db.php');
 require('./db-operator.php');
 
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
+
 if(!empty($_POST)){
 
     $db = new db(getCredentials());
@@ -18,9 +22,8 @@ if(!empty($_POST)){
     $res = $dbOp->saveResponse(array(
         'url'        =>  $_POST['url'],
         'categorie'  =>  $_POST['cat'],
-        'feedback'   =>  $_POST['how'],
-        'firstname'  =>  $_POST['firstname'],
-        'lastname'   =>  $_POST['lastname']
+        'feedback'   =>  $_POST['message'],
+        'firstname'  =>  $_POST['firstname']
     ));
 
 

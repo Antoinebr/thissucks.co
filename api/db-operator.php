@@ -38,8 +38,8 @@ class dbOperation extends db{
     {   
 
 
-        $sql = 'INSERT INTO responses(url,categorie,feedback,firstname,lastname)
-                       VALUES(:url,:categorie,:feedback,:firstname,:lastname)';
+        $sql = 'INSERT INTO responses(url,categorie,feedback,firstname)
+                       VALUES(:url,:categorie,:feedback,:firstname)';
 
         $req = $this->database->prepare($sql);
         
@@ -48,7 +48,7 @@ class dbOperation extends db{
             'categorie'  => $datas['categorie'],
             'feedback'   => $datas['feedback'],
             'firstname'  => $datas['firstname'],
-            'lastname'   => $datas['lastname']
+            //'lastname'   => $datas['lastname']
             //'date' =>  date("Y-m-d G:i:s")
             ));
         

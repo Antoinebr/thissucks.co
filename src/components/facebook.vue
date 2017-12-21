@@ -64,8 +64,8 @@ export default
       showUserInfo(data) {
         console.log('[Facebook DATAS] ',data);
 
-        this.$userInfo.firstName = data.first_name;
-        this.$userInfo.email = data.email;
+        userInfo.firstName = data.first_name;
+        userInfo.email = data.email;
 
     
         document.getElementById('firstname').value = data.first_name;

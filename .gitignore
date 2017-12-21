@@ -7,3 +7,6 @@ yarn-error.log*
 api/env.php
 .sass-cache/
 .editorconfig
+docker/
+
+/api/record-dev.php

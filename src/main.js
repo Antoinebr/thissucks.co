@@ -12,8 +12,13 @@ import router from './router'
  */
 
  // Validator
-import validator from 'validator';
-Vue.prototype.$validator = validator;
+
+Vue.prototype.$validator = require('validator')
+
+//Vue.prototype.$qs = require('qs')
+
+Vue.prototype.$qs = require('qs')   
+
 
 // Axios
 import axios from 'axios'
@@ -37,6 +42,9 @@ Vue.prototype.$userInfo.firstName = "";
 Vue.prototype.$userInfo.email = "";
 
 Vue.prototype.$steps = {};
+
+window.userInfo = {};
+
 
 /* eslint-disable no-new */
 new Vue({
